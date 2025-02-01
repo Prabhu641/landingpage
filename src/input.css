@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+@layer components {
+    .a_styles {
+        @apply text-sky-800 hover:text-black font-medium
+    }
+}

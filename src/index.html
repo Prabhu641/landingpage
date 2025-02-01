@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <!-- Font Awesome CDN for Social Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="m-0 p-0">
+    <!-- Navbar -->
+    <div class="w-full">
+        <nav class="flex justify-between items-center bg-amber-200 p-4">
+            <!-- Logo -->
+            <div class="h-15 w-15">
+                <img src="./girl.jpg" alt="image" class="rounded-full mt-0.5">
+            </div>
+            <!-- Navbar Links (Desktop and Tablet) -->
+            <ul class="flex space-x-7 hidden md:flex">
+                <li><a href="#" class="a_styles">Services</a></li>
+                <li><a href="#" class="a_styles">Pricing</a></li>
+                <li><a href="#" class="a_styles">About</a></li>
+                <li><a href="#" class="a_styles">Contact</a></li>
+            </ul>
+            <!-- Signup Button (Desktop and Tablet) -->
+            <button
+                class="text-white bg-blue-400 px-6 mx-2 py-2 rounded-3xl hover:bg-emerald-500 hover:text-black hidden md:block">Signup</button>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden flex items-center">
+                <button id="hamburger" class="text-2xl text-black focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="flex flex-col items-center space-y-4 py-4 bg-amber-200">
+                <li><a href="#" class="a_styles">Services</a></li>
+                <li><a href="#" class="a_styles">Pricing</a></li>
+                <li><a href="#" class="a_styles">About</a></li>
+                <li><a href="#" class="a_styles">Contact</a></li>
+                <li><a href="#"
+                        class="text-white bg-blue-400 px-6 py-2 rounded-3xl hover:bg-emerald-500 hover:text-black">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row w-full mt-12 px-4">
+        <div class="w-full md:w-1/2 p-4 text-center">
+            <p class="mt-6">Explore new destinations and create unforgettable memories with our expert travel services.
+                We have the perfect plan for you.</p>
+            <button class="bg-blue-600 py-2 px-6 rounded-2xl mt-2 text-white">Get Started</button>
+        </div>
+        <div class="w-full md:w-1/2 p-4">
+            <img src="./undraw_traveling_c18z.png" alt="travel" class="mx-auto">
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="w-full mt-10 px-4">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-medium">Our Services</h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="flex flex-col items-center">
+                <h1 class="text-2xl">Web Development</h1>
+                <img src="./website.png" alt="website" class="w-40 h-40">
+                <p>Build fast, modern websites tailored to your needs.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="flex flex-col items-center">
+                <h1 class="text-2xl">Mobile App Development</h1>
+                <img src="./mobile_application.png" alt="mobile_application" class="w-40 h-40">
+                <p>Create user-friendly mobile applications for all platforms.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="flex flex-col items-center">
+                <h1 class="text-2xl">Design</h1>
+                <img src="./design.png" alt="design" class="w-40 h-40">
+                <p>Design sleek and attractive user interfaces.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="w-full mt-12 px-4 p-8 rounded-lg">
+        <h1 class="text-4xl font-medium text-center mb-8">Our Pricing Plans</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Basic Plan -->
+            <div class="bg-slate-300 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                <h3 class="text-black text-3xl font-semibold mb-4">Basic Plan</h3>
+                <p class="text-xl text-blue-800 mb-4">$49/month</p>
+                <ul class="mb-4 space-y-2">
+                    <li>1 Website</li>
+                    <li>Basic Support</li>
+                    <li>Up to 5 Pages</li>
+                    <li>Unlimited Pages</li>
+                    <li>Advanced Features</li>
+                </ul>
+                <button class="w-full text-white bg-blue-600 rounded-lg font-medium py-2 hover:bg-blue-700">Choose
+                    Plan</button>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="bg-slate-300 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                <h3 class="text-black text-3xl font-semibold mb-4">Standard Plan</h3>
+                <p class="text-xl text-blue-800 mb-4">$99/month</p>
+                <ul class="mb-4 space-y-2">
+                    <li>5 Websites</li>
+                    <li>Priority Support</li>
+                    <li>Up to 15 Pages</li>
+                    <li>Analytics</li>
+                    <li>Advanced Features</li>
+                </ul>
+                <button class="w-full text-white bg-blue-600 rounded-lg font-medium py-2 hover:bg-blue-700">Choose
+                    Plan</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="bg-slate-300 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                <h3 class="text-black text-3xl font-semibold mb-4">Premium Plan</h3>
+                <p class="text-xl text-blue-800 mb-4">$199/month</p>
+                <ul class="mb-4 space-y-2">
+                    <li>Unlimited Websites</li>
+                    <li>24/7 Premium Support</li>
+                    <li>Unlimited Pages</li>
+                    <li>Advanced Features</li>
+                    <li>SEO Optimization</li>
+                </ul>
+                <button class="w-full text-white bg-blue-600 rounded-lg font-medium py-2 hover:bg-blue-700">Choose
+                    Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stories Section -->
+    <div class="w-full p-8 mt-12">
+        <h1 class="text-4xl font-medium text-center mb-8">Featured Stories</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Story 1 -->
+            <div class="bg-slate-200 text-center rounded-lg shadow-lg overflow-hidden">
+                <img src="./girl.jpg" alt="communication" class="w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold mt-4 mb-2">Communication</h3>
+                <p class="px-4 text-gray-700 mb-4">Learn how effective communication can transform your relationships
+                    and career.</p>
+                <button class="bg-blue-500 text-white rounded-lg px-6 py-2 hover:bg-blue-600">Read More</button>
+            </div>
+            <!-- Story 2 -->
+            <div class="bg-slate-200 text-center rounded-lg shadow-lg overflow-hidden">
+                <img src="./girl.jpg" alt="communication" class="w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold mt-4 mb-2">Communication</h3>
+                <p class="px-4 text-gray-700 mb-4">Explore how the power of communication can unlock personal growth.
+                </p>
+                <button class="bg-blue-500 text-white rounded-lg px-6 py-2 hover:bg-blue-600">Read More</button>
+            </div>
+            <!-- Story 3 -->
+            <div class="bg-slate-200 text-center rounded-lg shadow-lg overflow-hidden">
+                <img src="./girl.jpg" alt="communication" class="w-full h-60 object-cover">
+                <h3 class="text-xl font-semibold mt-4 mb-2">Communication</h3>
+                <p class="px-4 text-gray-700 mb-4">Discover the impact of clear and concise communication in daily life.
+                </p>
+                <button class="bg-blue-500 text-white rounded-lg px-6 py-2 mt-6 hover:bg-blue-600">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 relative">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Column 1: Company Info -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Company</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-blue-400">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Careers</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Press</a></li>
+                </ul>
+            </div>
+            <!-- Column 2: Services -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Services</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-blue-400">Web Development</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Mobile Apps</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Design</a></li>
+                    <li><a href="#" class="hover:text-blue-400">SEO</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Contact -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+                <ul>
+                    <li><a href="mailto:info@yourcompany.com" class="hover:text-blue-400">Email Us</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Support</a></li>
+                    <li><a href="#" class="hover:text-blue-400">FAQ</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Column 4: Social Media -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Copyright -->
+        <div class="py-4 text-center absolute bottom-0 left-[500px]">
+            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the hamburger button and mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Add click event to toggle mobile menu
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
